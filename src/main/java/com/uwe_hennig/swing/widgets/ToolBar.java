@@ -16,6 +16,8 @@ import javax.swing.JButton;
 import javax.swing.JToolBar;
 
 /**
+ * ToolBar
+ * 
  * @author Uwe Hennig
  */
 public class ToolBar extends Composite {

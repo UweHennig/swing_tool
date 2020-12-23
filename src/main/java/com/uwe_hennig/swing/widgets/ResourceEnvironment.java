@@ -9,6 +9,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * ResourceEnvironment
+ * 
+ * Helper for loading images 
+ * TODO !
  * @author Uwe Hennig
  */
 public class ResourceEnvironment {

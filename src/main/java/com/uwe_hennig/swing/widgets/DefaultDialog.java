@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
- * DefaultDialog ist ein standardisierter Dialog.
+ * DefaultDialog is a standard dialog.
  * 
  * @see de.uh.guibase.Dialog Dialog
  * @author Uwe Hennig

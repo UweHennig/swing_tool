@@ -10,6 +10,8 @@ import java.util.Hashtable;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ * Data model for KeyValueTypeEditor
+ * 
  * @author Uwe Hennig
  */
 public class KeyValueTypeModel extends AbstractTableModel {

@@ -10,6 +10,8 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreePath;
 
 /**
+ * Explorer
+ * 
  * @author Uwe Hennig
  */
 public class Explorer extends Composite {

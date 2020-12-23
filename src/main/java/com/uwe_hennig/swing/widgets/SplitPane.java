@@ -8,7 +8,7 @@ package com.uwe_hennig.swing.widgets;
 import javax.swing.JSplitPane;
 
 /**
- * SplitPane ist ein standard SplitPane. Die rechte und linke Seite besteht aus einem Composite.
+ * SplitPane creates a split pane.
  * 
  * @see de.uh.guibase.Comosite
  * @author Uwe Hennig

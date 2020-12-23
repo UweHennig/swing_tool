@@ -10,6 +10,9 @@ import java.util.Hashtable;
 import java.util.Enumeration;
 
 /**
+ * KeyValueModel
+ * 
+ * Data model for KeyValueEditor
  * @author Uwe Hennig
  */
 public class KeyValueModel extends AbstractTableModel {

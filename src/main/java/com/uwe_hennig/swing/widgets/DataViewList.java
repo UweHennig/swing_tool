@@ -17,7 +17,7 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 /**
- * Liefert eine uniforme Struktur für Eingabefelder mit Label.
+ * Returns a uniform structure for input fields with label.
  * 
  * @see de.uh.guibase.DataViewLayout
  * @author Uwe Hennig

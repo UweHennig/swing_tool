@@ -10,7 +10,7 @@ import javax.swing.JTree;
 import javax.swing.ScrollPaneConstants;
 
 /**
- * Tree ist eine Componente, die Tree abbildet.
+ * Tree standard for JTree
  * 
  * @author Uwe Hennig
  */
@@ -32,8 +32,7 @@ public class Tree extends Composite {
     }
 
     /**
-     * Interne Hilfunktion _init. Mit _init werden die Defaulteinstellung dieser
-     * Klasse vorgenommen.
+     * internal helper
      */
     private void _init() {
         setLayout(new java.awt.BorderLayout());

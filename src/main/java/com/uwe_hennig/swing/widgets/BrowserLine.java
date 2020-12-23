@@ -8,10 +8,9 @@ package com.uwe_hennig.swing.widgets;
 import java.util.Vector;
 
 /**
- * BrowserLine ist ein Adapter. Er stellt eine Objekt dar, das sich in einer Zeile des Browsers darstellt. Eine Zeile
- * besteht aus Spalten und jede Spalte hat einen Renderer. Jedes Objekt hat ein eigenes PopupMenu und entsprechende
- * Listener.
- * 
+ * BrowserLine is an adapter class.
+ * Each line consist of columns to be rendered and has its own popup menu.
+ *  
  * @author Uwe Hennig
  */
 public abstract class BrowserLine {

@@ -15,8 +15,7 @@ import javax.swing.Box;
 import javax.swing.JButton;
 
 /**
- * DefaultButtonPanel bildet eine Buttonzeile. Diese Buttonleiste wird im Dialog verwendet und besteht aus den Buttons:
- * OK, Abbruch und Hilfe
+ * Default button panel with ok, cancel and help button. 
  * 
  * @see de.uh.guibase.ButtonPanel ButtonPanel
  * @see de.uh.guibase.Dialog Dialog

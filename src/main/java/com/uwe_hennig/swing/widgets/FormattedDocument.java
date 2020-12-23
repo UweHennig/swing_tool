@@ -13,6 +13,11 @@ import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
 
+/**
+ * FormattedDocument
+ * 
+ * @author Uwe Hennig
+ */
 public class FormattedDocument extends PlainDocument {
     private static final long serialVersionUID = 1648506635614111407L;
     private Format            format;

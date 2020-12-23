@@ -10,6 +10,10 @@ import java.util.Date;
 
 import javax.swing.JTextField;
 
+/**
+ * DateField
+ * @author Uwe Hennig
+ */
 public class DateField extends JTextField {
     private static final long serialVersionUID = -6007675674613267016L;
     private SimpleDateFormat  format           = new SimpleDateFormat("dd.MM.yyyy");

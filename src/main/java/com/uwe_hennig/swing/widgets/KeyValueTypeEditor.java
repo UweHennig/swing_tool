@@ -17,6 +17,8 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
 /**
+ * KeyValueTypeEditor
+ * 
  * @author Uwe Hennig
  */
 public class KeyValueTypeEditor extends Composite {

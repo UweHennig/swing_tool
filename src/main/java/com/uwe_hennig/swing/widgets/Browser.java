@@ -17,10 +17,10 @@ import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
 
 /**
- * Browser ist ein JTable. Erweitere Funktionalität:
- * <li> 1) Uniformes Aussehen
- * <li> 2) Popup
- * <li> 3) Default - Model </dir>
+ * This class represents a JTable with enhanced functionality.
+ * <li> 1) Uniform appeariance
+ * <li> 2) Popup menu
+ * <li> 3) Default data model </dir>
  * 
  * @author Uwe Hennig
  */
@@ -75,7 +75,7 @@ public class Browser extends Composite {
 	}
 
 	/**
-	 * Interne Hilfunktion _init. Mit _init werden die Defaulteinstellung dieser Klasse vorgenommen.
+	 * internal help function, which sets default settings.
 	 */
 	private void _init() {
 		setLayout(new java.awt.BorderLayout());
@@ -100,7 +100,8 @@ public class Browser extends Composite {
 	}
 
 	/**
-	 * createPopup erzeugt ein PopupMenu. Alle notwendigen Daten werden vom Model "getCommand-Methoden" geholt.
+	 * creates a popup menu.
+	 * all necessary data are fetched from the model. see "getCommand" methods.
 	 */
 	private JPopupMenu createPopup() {
 		int seperatorPattern = 0;
@@ -165,7 +166,7 @@ public class Browser extends Composite {
 	}
 
 	/**
-	 * @author Uwe Hennig
+	 * Internal class.
 	 */
 	final class BrowserListener implements MouseListener {
 		private Browser	parent	= null;
@@ -190,6 +191,9 @@ public class Browser extends Composite {
 		}
 	}
 
+    /**
+     * Internal class.
+     */
 	final class InternalBrowserPopupActionListener implements ActionListener {
 		BrowserCommand	browserCommand;
 

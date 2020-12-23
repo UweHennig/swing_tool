@@ -11,14 +11,14 @@ import java.util.Vector;
 import javax.swing.JPanel;
 
 /**
- * Composite ist die Basisklasse vieler Komponenten.
+ * Composite is the baseclass of many components.
  * 
  * @author Uwe Hennig
  */
 public class Composite extends JPanel implements Serializable {
 	private static final long	serialVersionUID	= -450648807943160754L;
 
-	/** Liefert eine Liste aller Client-Komponenten. Analoge Methode zu getComponent aus javax.swing.JComponent */
+	/** returns client components */
 	public Composite[] getComposites() {
 		java.awt.Component[] comps = getComponents();
 		java.util.Vector<java.awt.Component> vec = new java.util.Vector<java.awt.Component>();
@@ -32,7 +32,7 @@ public class Composite extends JPanel implements Serializable {
 	}
 
 	/**
-	 * Analoge Methode zu getComposite allerdings mit allen rekursiven Komponenten
+	 * returns client components recursively.
 	 * 
 	 * @see Composite.getComposites
 	 */

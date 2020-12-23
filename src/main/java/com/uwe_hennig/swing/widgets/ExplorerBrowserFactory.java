@@ -8,7 +8,7 @@ package com.uwe_hennig.swing.widgets;
 import javax.swing.tree.TreePath;
 
 /**
- * ExplorerBrowserFactory ist eine Factory für den Inhalt des Explorers.
+ * ExplorerBrowserFactory
  * 
  * @see de.uh.guibase.Explorer Explorer
  * @author Uwe Hennig

@@ -10,7 +10,7 @@ import java.util.Hashtable;
 import javax.swing.JTabbedPane;
 
 /**
- * TabbedPane ist ein standard TabbedPane
+ * TabbedPane is a standard tabbed pane
  * 
  * @author Uwe Hennig
  */

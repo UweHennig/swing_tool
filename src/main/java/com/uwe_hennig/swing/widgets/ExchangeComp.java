@@ -15,6 +15,8 @@ import javax.swing.table.*;
 import javax.swing.border.*;
 
 /**
+ * ExchangeComp
+ * 
  * @author Uwe Hennig
  */
 public class ExchangeComp extends Composite {
@@ -245,5 +247,4 @@ public class ExchangeComp extends Composite {
 		gbc.gridheight = h; // H�he in Grideinheiten
 		add(c, gbc);
 	}
-
 }

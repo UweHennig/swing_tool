@@ -10,7 +10,7 @@ import java.awt.BorderLayout;
 import javax.swing.JFrame;
 
 /**
- * Dialog stellt einen Standarddialog dar.
+ * Dialog is a standard dialog.
  * 
  * @author Uwe Hennig
  */
@@ -28,7 +28,7 @@ public class Dialog extends JFrame {
         _init();
     }
 
-    /** setzt den Dialoginhalt. */
+    /** sets the content */
     public void setCenter(Composite comp) {
         getContentPane().remove(comp);
         getContentPane().add(comp, BorderLayout.CENTER);
@@ -39,7 +39,7 @@ public class Dialog extends JFrame {
         return center;
     }
 
-    /** setzen der unteren Buttonleiste */
+    /** set bottom buttons*/
     public void setButtonPanel(ButtonPanel buttonPanel) {
         // alten Panel l�schen und neuen nach SOUTH einf�gen.
         getContentPane().remove(this.buttonPanel);
@@ -52,8 +52,7 @@ public class Dialog extends JFrame {
     }
 
     /**
-     * Interne Hilfunktion _init. Mit _init werden die Defaulteinstellung dieser
-     * Klasse vorgenommen.
+     * internal helper function.
      */
     private void _init() {
         getContentPane().setLayout(new BorderLayout());

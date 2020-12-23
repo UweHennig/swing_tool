@@ -6,7 +6,7 @@
 package com.uwe_hennig.swing.widgets;
 
 /**
- * Enthät die Liste der Spaltenüberschriften.
+ * This class contains the list of column headers.
  * 
  * @author Uwe Hennig
  */

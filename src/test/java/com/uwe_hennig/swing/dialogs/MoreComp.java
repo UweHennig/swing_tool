@@ -1,5 +1,5 @@
 /**
- * @(#)CompleteDialogTest.java
+ * @(#)MoreComp.java
  * Copyright (c) 2020 Uwe Hennig
  * All rights reserved.
  */

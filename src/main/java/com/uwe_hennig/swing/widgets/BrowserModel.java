@@ -10,23 +10,8 @@ import java.util.Vector;
 import java.awt.event.ActionListener;
 
 /*-
- * Model der Klasse Browser.
- * Das Model besteht aus einem Vektor von BrowserLines.<br>
- * Hier werden die Events f�r das PopupMenu spezifiziert:<br>
- * Das Menü besteht aus "BrowserComands" wie "New", aus "GlobalObjCommands" wie
- * "Show", "Edit" und "Delete" und aus "ObjectCommands" wie z.B. "Recalulate".<br>
- * <br>
- * Beispiel:<br>
- * <br>
- * --<br>
- * | New<br>
- * | -----------------<br>
- * | Show<br>
- * | Edit<br>
- * | Delete<br>
- * | -----------------<br>
- * | Recalculate<br>
- * --<br>
+ * Data model for class browser.
+
  * @see Browser
  * @author Uwe Hennig
  */

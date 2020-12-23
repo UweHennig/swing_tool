@@ -1,5 +1,5 @@
 /**
- * @(#)Browser.java
+ * @(#)AdresseComp.java
  * Copyright (c) 2020 Uwe Hennig
  * All rights reserved.
  */

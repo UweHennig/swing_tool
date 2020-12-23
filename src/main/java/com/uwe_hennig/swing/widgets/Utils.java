@@ -21,6 +21,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
+ * Utils
+ * 
  * @author Uwe Hennig
  */
 public class Utils {

@@ -20,7 +20,11 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
-
+/**
+ * CalendarBean
+ * 
+ * @author Uwe Hennig
+ */
 public class CalendarBean extends Composite {
     private static final long serialVersionUID = -1846216120564611428L;
     private static Object[]   headlines        = { "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" };

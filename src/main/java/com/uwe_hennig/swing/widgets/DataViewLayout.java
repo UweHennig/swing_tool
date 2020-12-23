@@ -8,8 +8,7 @@ package com.uwe_hennig.swing.widgets;
 import java.awt.Dimension;
 
 /**
- * Layoutklasse für DataViewList. Verschiede Objekte vom DataViewList werden mit
- * einem Layout versehen.
+ * Layout class for DataViewList. 
  * 
  * @see de.uh.guibase.DataViewList
  * @author Uwe Hennig
@@ -53,8 +52,7 @@ public class DataViewLayout extends java.util.Observable {
     }
 
     /**
-     * Update - Methode. Alle Labels und Controlls haben die gleiche Gr��e in
-     * DataViewList
+     * Update layout.
      */
     public void update(Dimension labelDim, Dimension widgetDim) {
         update(labelDim, widgetDim, null);

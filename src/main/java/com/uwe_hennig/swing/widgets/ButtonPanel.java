@@ -14,7 +14,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 
 /**
- * ButtonPanel bildet eine Buttonzeile. Diese Buttonleiste wird im Dialog verwendet.
+ * Button panel class.
  * 
  * @see de.uh.guibase.DefaultButtonPanel
  * @see de.uh.guibase.Dialog

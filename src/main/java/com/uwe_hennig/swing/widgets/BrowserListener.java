@@ -7,6 +7,10 @@ package com.uwe_hennig.swing.widgets;
 
 import java.awt.event.ActionListener;
 
+/**
+ * BrowserListener
+ * @author Uwe Hennig
+ */
 public interface BrowserListener extends ActionListener {
     
 }
