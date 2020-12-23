@@ -39,8 +39,17 @@ public class ToolBar extends Composite {
     public void addButton(JButton button) {
         toolbar.add(button);
     }
+    
+    public void addTextButton(String text, ActionListener actionListener) {
+        JButton button = new JButton();
+        button.setText(text);
+        if (actionListener != null) {
+            button.addActionListener(actionListener);
+        }
+        toolbar.add(button);
+    }
 
-    public void addButton(String imageNameStub, ActionListener actionListener) {
+    public void addIconButton(String imageNameStub, ActionListener actionListener) {
         Icon defaultIcon = getIcon(getDefaultIconName(imageNameStub));
         Icon pressedIcon = getIcon(getPressedIconName(imageNameStub));
         Icon disabledIcon = getIcon(getDisabledIconName(imageNameStub));
