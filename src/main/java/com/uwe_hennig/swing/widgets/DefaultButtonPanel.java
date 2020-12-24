@@ -24,9 +24,13 @@ import javax.swing.JButton;
  */
 public class DefaultButtonPanel extends ButtonPanel {
 	private static final long	serialVersionUID		= 2764333432404792490L;
-	private JButton				okButton				= new JButton("Ok");
-	private JButton				cancelButton			= new JButton("Abbruch");
-	private JButton				helpButton				= new JButton("Hilfe");
+	public static String OK = "Ok";
+	public static String CANCEL = "Cancel";
+	public static String HELP = "Help";
+	
+	private JButton				okButton				= new JButton(OK);
+	private JButton				cancelButton			= new JButton(CANCEL);
+	private JButton				helpButton				= new JButton(HELP);
 	private ActionListener		helpActionListener		= null;
 	private ActionListener		okActionListener		= null;
 	private ActionListener		cancelActionListener	= null;
@@ -54,14 +58,12 @@ public class DefaultButtonPanel extends ButtonPanel {
 
 	/** Klasse kann Default-Buttons ActionListener aufnehmen. */
 	public synchronized void addCancelActionListener(ActionListener al) {
-		cancelActionListener = AWTEventMulticaster
-				.add(cancelActionListener, al);
+		cancelActionListener = AWTEventMulticaster .add(cancelActionListener, al);
 	}
 
-	/** Klasse kann Default-Buttons ActionListener l�schen. */
+	/** Klasse kann Default-Buttons ActionListener löpschen. */
 	public synchronized void removeCancelActionListener(ActionListener al) {
-		cancelActionListener = AWTEventMulticaster.remove(cancelActionListener,
-				al);
+		cancelActionListener = AWTEventMulticaster.remove(cancelActionListener, al);
 	}
 
 	/** Klasse kann Default-Buttons ActionListener aufnehmen. */
@@ -69,7 +71,7 @@ public class DefaultButtonPanel extends ButtonPanel {
 		okActionListener = AWTEventMulticaster.add(okActionListener, al);
 	}
 
-	/** Klasse kann Default-Buttons ActionListener l�schen. */
+	/** Klasse kann Default-Buttons ActionListener löschen. */
 	public synchronized void removeOkActionListener(ActionListener al) {
 		okActionListener = AWTEventMulticaster.remove(okActionListener, al);
 	}
@@ -79,7 +81,7 @@ public class DefaultButtonPanel extends ButtonPanel {
 		helpActionListener = AWTEventMulticaster.add(helpActionListener, al);
 	}
 
-	/** Klasse kann Default-Buttons ActionListener l�schen. */
+	/** Klasse kann Default-Buttons ActionListener löschen. */
 	public synchronized void removeHelpActionListener(ActionListener al) {
 		helpActionListener = AWTEventMulticaster.remove(helpActionListener, al);
 	}

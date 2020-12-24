@@ -21,6 +21,8 @@ import javax.swing.JOptionPane;
  */
 public class DefaultDialog extends Dialog {
 	private static final long	serialVersionUID	= 5519089584748352662L;
+	private static final String QUESTION = "Question: ";
+	private static final String CANCEL_QUESTION = "Cancel?";
 
 	public DefaultDialog() {
 		super();
@@ -33,52 +35,30 @@ public class DefaultDialog extends Dialog {
 	}
 
 	private void onOk() {
-		if (valid())
+		if (valid()) {
 			ok();
+		}
 	}
 
 	protected boolean valid() {
-		return false;
+		return true;
 	}
 
-	/**
-	 * ok - Methode wird stets vom "ActionEvent" des OK-Buttons aufgerufen. Alternativ kann man mit "getButtonPanel" den
-	 * DefaultButtonPanel bekommen. Hier kann man weitere Listener registrieren.
-	 * 
-	 * @see #getButtonPanel
-	 * @see DefaultButtonPanel
-	 * @see DefaultButtonPanel#addOkActionListener
-	 */
-	protected void ok() {}
+	protected void ok() {
+	    dispose();
+	}
 
 	private void onCancel() {
-		int result = JOptionPane.showConfirmDialog(this, "Wirklich abbrechen?",
-				"Frage: ", JOptionPane.YES_NO_OPTION,
-				JOptionPane.QUESTION_MESSAGE);
+		int result = JOptionPane.showConfirmDialog(this, CANCEL_QUESTION,QUESTION, 
+		        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 		if (result == 0) {
 			cancel();
 			dispose();
 		}
 	}
 
-	/**
-	 * cancel - Methode wird stets vom "ActionEvent" des Cancel-Buttons aufgerufen. Alternativ kann man mit
-	 * "getButtonPanel" den DefaultButtonPanel bekommen. Hier kann man weitere Listener registrieren.
-	 * 
-	 * @see #getButtonPanel
-	 * @see DefaultButtonPanel
-	 * @see DefaultButtonPanel#addCancelActionListener
-	 */
 	protected void cancel() {}
 
-	/**
-	 * help - Methode wird stets vom "ActionEvent" des Help-Buttons aufgerufen. Alternativ kann man mit "getButtonPanel"
-	 * den DefaultButtonPanel bekommen. Hier kann man weitere Listener registrieren.
-	 * 
-	 * @see #getButtonPanel
-	 * @see DefaultButtonPanel
-	 * @see DefaultButtonPanel#addHelpActionListener
-	 */
 	protected void help() {
 		System.out.println("Help pressed!");
 	}
@@ -111,7 +91,7 @@ public class DefaultDialog extends Dialog {
 
 	protected Composite createCenter() {
 		Composite comp = new Composite();
-		comp.add(new JLabel("Bitte Methode createCenter �berschreiben!"));
+		comp.add(new JLabel("Bitte Methode createCenter überschreiben!"));
 		return comp;
 	}
 

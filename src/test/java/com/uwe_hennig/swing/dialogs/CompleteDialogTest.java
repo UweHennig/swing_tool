@@ -6,6 +6,8 @@
 package com.uwe_hennig.swing.dialogs;
 
 import java.awt.BorderLayout;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import com.uwe_hennig.swing.widgets.Composite;
 import com.uwe_hennig.swing.widgets.DefaultDialog;
@@ -48,5 +50,10 @@ public class CompleteDialogTest extends DefaultDialog {
 		CompleteDialogTest dlg = new CompleteDialogTest("Personendaten");
 		dlg.pack();
 		dlg.setVisible(true);
+        dlg.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 	}
 }
